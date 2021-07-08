@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* сбрасываем все дефолтные отступы */
+   
+}
+
+.container {
+    /* добавляем еще 20рх, чтобы добавить внутренние отступы и не было прижатости элементов к краям блока */
+    max-width: 1160px;
+    padding: 0 10px;
+    /* центровка блока */
+    margin: 0 auto;
+    /* Чтобы блок не увеличивал размеры */
+    box-sizing: border-box;
+}
+.header {
+    background-color: #222222;
+    /* отступ элементам снизу сверху 19, справа слева 0 */
+    padding: 19px 0;
+}
+.header__wrap {
+    /* устанавливаем расположение иконок */
+    display: flex; 
+    justify-content: space-around;
+}
+.header__logo {
+    margin-right: 41px;
+}
+
+.header__item:not(:last-child) {
+ /* всем кроме последнего элемента отступ справа 33рхп*/
+margin-right: 33px;
+}
+
+.header__bottom {
+    /* height: 148px; */
+    background: #F8F3F4;
+    padding: 60px 0;
+
+}
+.header__bottom__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.header__bottom__left {
+/* width: 194px;
+ height: 29px; */
+ font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #F16D7F;
+}
+.header__bottom__right {
+    /* width: 209px;
+    height: 17px; */
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #636363;
+}
+.header__bottom__decor {
+    color: #F16D7F;
+}
+
+.slogan {
+    margin-top: 51px; 
+    margin-bottom: 65px;  
+}
+/* обертка для текста меню */
+.slogan__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+}
+/* обертка для текста и картинки */
+.slogan__left__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.slogan__left__h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    margin-right: 11px;
+    color: #000000
+}
+/* обертка для элементов справа */
+.slogan__right__wrap {
+    display: flex;
+    justify-content: flex-end;  
+}
+.slogan__right__h3 {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+margin-right: 10px;
+}
+.slogan__right__img {
+  color:  #6F6E6E;
+}
+.slogan__right__img:not(:last-child) {
+    /* все элементы, кроме последнего будут иметь отступ справа 28рх */
+ margin-right: 28px;
+} 
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card__box {
+    width: 360px;
+    height: 581px;
+    margin-bottom: 32px;
+    background-color: #F8F8F8;
+
+}
+
+.box__p {
+        font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-bottom: 18px;
+    padding-left: 18px;
+}
+.box__h4 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    font-size: 13px;
+line-height: 16px;
+padding-left: 18px;
+}
+
+.box__price {
+    font-size: 16px;
+line-height: 19px;
+color: #F16D7F;
+padding-left: 18px;
+}
