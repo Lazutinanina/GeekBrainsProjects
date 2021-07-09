@@ -76,7 +76,7 @@ color: #636363;
 
 .slogan {
     margin-top: 51px; 
-    margin-bottom: 65px;  
+    margin-bottom: 60px;  
 }
 /* обертка для текста меню */
 .slogan__wrap {
@@ -128,7 +128,7 @@ margin-right: 10px;
 .card__box {
     width: 360px;
     height: 581px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     background-color: #F8F8F8;
 
 }
@@ -154,3 +154,191 @@ line-height: 19px;
 color: #F16D7F;
 padding-left: 18px;
 }
+
+.pagination__decor {
+    text-decoration: none;
+    font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+/* Ставим элементы с обтеканием по левому краю */
+float: left;
+padding: 8px;
+color: #EBEBEB;
+
+/* color: #EBEBEB; */
+}
+.pagination {
+    border: 1px solid #EBEBEB;
+    width: 282px;
+    height: 43px;
+    /* центрирование элемента по середине экрана */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+align-items: center;
+margin-bottom: 96px;
+}
+
+.pagination__decor:nth-child(2) {
+    /* второй элемент будет розового цвета */
+    color: #F16D7F;
+}
+.aside {
+    background: #222224;
+    height: 341px;
+    
+}
+.aside__wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    padding-top: 103px;
+}
+.aside__box {
+    width: 360px;
+    height: 134px;
+    color: #FBFBFB;
+
+}
+.aside__h4 {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    color: #FBFBFB;
+    padding-top: 28px;
+}
+.aside__p {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center; 
+}
+.aside__box img {
+    /* выравнивание картинки по центру блока */
+/*  элемент делаем блочным */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    background-image: url(img/footertop.png);
+    background-repeat: no-repeat;
+    /* растягиваем картинку на весь экран - делаем резиновую */
+    background-size:100%;
+    /*  затемнение картинки */
+    background-blend-mode: screen;
+background-color:  rgba(244, 244, 244, 0.7);
+}
+
+.footer__form {
+    display: flex;
+    justify-content: center;
+    height: 49px;
+}
+.footer__top {
+    width: 1600px;
+    height: 448px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+line-height: 24px;
+text-align: center;
+    
+}
+.footer__left {
+    width: 360px;
+    height: 250px;
+    text-align: center;
+}
+
+.footer__right {
+            width: 557px;
+            height: 142px;
+}
+.footer__right__p {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.footer__right__decor {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 12px;  
+}
+
+.footer__left__p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.footer__left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+}
+.footer__input {
+    border-radius: 50px 0 0 50px;
+    border: 0px;
+    background-color: #E1E1E1;
+    padding: 7px 64px 6px 22px;
+}
+.footer__button {
+    border-radius: 0 50px 50px 0;
+    background: #F16D7F;
+    color: #FFFFFF;
+    border: 0px;
+    width: 100px;
+}
+.footer__bottom {
+    height: 79px;
+    /* width: 1600px; */
+    background: #222224;
+}
+.copyright {
+    height: 19px;
+    width: 329px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.copyright p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.footer__bottom__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon {
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+
+.icon__link {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
+    padding: 8px;
+    margin: 7px;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+/* При наведении на класс с иконками - смена цвета */
+.icon__link:hover {
+    color: #fff;
+    background-color: #F16D7F;
+ }
