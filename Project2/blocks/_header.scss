@@ -1,0 +1,22 @@
+.header {
+    background-color: #222222;
+    /* отступ элементам снизу сверху 10, справа слева 0 */
+    padding: 19px 0;
+
+    &__wrap {
+    /* устанавливаем расположение иконок */
+    display: flex; 
+    justify-content: space-around;
+    }
+
+    &__logo {
+        margin-right: 41px;
+    }
+    &__item {
+        &:not(:last-child) {
+ /* всем кроме последнего элемента отступ справа 33рхп*/
+        margin-right: 33px;
+        }
+    }
+}
+
