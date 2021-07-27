@@ -148,9 +148,41 @@ body {
     height: 581px;
     margin-bottom: 32px;
     background-color: #F8F8F8;
-
 }
-
+.card__box_img {
+    display: block;   
+}
+.card__box_block {
+    position: relative;
+}
+.card__button {
+     /* outline: 2px solid red; */
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card__box_block:hover .card__button {
+    opacity: 1;
+}
+.card__button_add {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+}
+.card__button_add :hover {
+    background-color: #fff;
+    color: grey;
+}
+  
 .box__p {
         font-size: 14px;
     line-height: 17px;
@@ -342,4 +374,170 @@ text-align: center;
     height: 32px;
 }
 
-@import ".//blocks/header"
+@import ".//blocks/header";
+
+
+@media(max-width: 768px) {
+    .header__wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+    }
+    .content {
+        max-height: 368px;
+        background-size: cover;
+        max-width: 768px;
+    }
+    .content__wrap {
+        // Размер картинки
+        background-size: 386px 368px;
+        background-position: -21px bottom;
+    }
+    .content__text {
+        max-width: 283px;
+        height: 78px;
+        padding-right: 32px;
+    }
+    .content__p {
+        font-size: 28px;
+    line-height: 30px;
+    }
+    .decor {
+            font-size: 24px;
+            line-height: 28px;   
+}
+.content h4 {
+    font-size: 24px;
+    line-height: 38px;
+}
+.main {
+    margin-top: 19px;
+}
+.main__item:not(:last-child) {
+    /* все элементы, кроме последнего будут иметь ширину 232рх */
+    width: 232px;
+    height: 167px;
+    margin: 0 0 20px 0;
+}
+.main__card1 {
+    background-size: 232px 167px;
+}
+.main__card2 {
+    background-size: 232px 167px;
+}
+.main__card3 {
+    background-size: 232px 167px;
+}
+.container {
+    padding: 0 19px;
+}
+.aside__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aside {
+    height: 610px;
+}
+.aside__box {
+    padding-top: 48px;
+    padding-bottom: 30px;
+}
+.footer__top {
+    width: 768px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-size: cover;
+}
+}
+@media(max-width: 375px) {
+    .header {
+        width: 375px;
+    }
+// Все элементы начиная со второго скрыты
+    .header__right :nth-child(n+2) {
+         display: none;
+    }
+    .header__item:not(:last-child) {
+        margin-right: 3px;
+    }
+.content__wrap {
+    background-image: none;
+}
+ .content__text {
+    max-width: 236px;
+    height: 66px;
+    padding-left: 10px;
+ }
+ .content h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.decor {
+    font-size: 20px;
+    line-height: 28px;
+}
+.main__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
+.main__item:not(:last-child) {
+    width: 343px;
+    height: 247px;
+    margin: 0 0 20px 0;
+}
+.main__card1 {
+    background-size: 343px 247px;
+}
+.main__card2 {
+    background-size: 343px 247px;
+}
+.main__card3 {
+    background-size: 343px 247px;
+}
+
+.footer__top {
+    width: 375px;
+}
+.footer__left__p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.footer__right__decor {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 22px;
+}
+.footer__bottom {
+    height: 143px;
+}
+.footer__bottom__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -ms-flex-align: center;
+    align-items: center;
+    // Направление, в котором блоки будут располагаться вертикально, но наоборот
+    flex-direction: column-reverse;
+}
+.copyright {
+    text-align: center;
+    }
+}
