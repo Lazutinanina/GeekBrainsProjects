@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: 'Lato', sans-serif;
+  /* Для прижатия футера к низу */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -40,7 +44,7 @@ body {
   /* помещаем в конец */
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+      justify-content: space-around;
   background-image: url(img/backgroundmen.png);
   background-repeat: no-repeat;
   /* привязываем картинку слева и снизу */
@@ -52,10 +56,9 @@ body {
 }
 
 .content__text {
-  max-width: 377px;
   font-family: Lato, sans-serif;
   color: #222222;
-  height: 93px;
+  margin-left: 55%;
   /* вертикальная палочка */
   padding-left: 20px;
   border-left: 12px solid  #F16D7F;
@@ -64,11 +67,14 @@ body {
 .content__p {
   font-size: 48px;
   line-height: 58px;
+  display: block;
+  font-weight: 900;
 }
 
 .content h4 {
   font-size: 30px;
   line-height: 38px;
+  font-weight: 700;
 }
 
 .main {
@@ -274,7 +280,15 @@ body {
   position: absolute;
   margin-top: 48px;
 }
-
+.button:hover {
+  background: #F16D7F;
+  border: 1px solid #FF6A6A;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
 .slogan a {
   text-decoration: none;
   display: -webkit-box;
@@ -344,6 +358,7 @@ body {
   /*  затемнение картинки */
   background-blend-mode: screen;
   background-color: rgba(244, 244, 244, 0.7);
+  margin-top: auto;
 }
 
 .footer__form {
@@ -465,15 +480,29 @@ body {
   padding-bottom: 23px;
 }
 
-.icon img {
+.icon__link {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px;
+  margin: 7px;
+  border-radius: 5px;
   width: 32px;
   height: 32px;
+  text-decoration: none;
+}
+
+/* При наведении на класс с иконками - смена цвета */
+.icon__link:hover {
+  color: #fff;
+  background-color: #F16D7F;
 }
 
 .header {
   background-color: #222222;
   /* отступ элементам снизу сверху 10, справа слева 0 */
   padding: 19px 0;
+  position: relative;
 }
 
 .header__wrap {
@@ -490,10 +519,98 @@ body {
   margin-right: 41px;
 }
 
+
+.header__item {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .header__item:not(:last-child) {
   /* всем кроме последнего элемента отступ справа 33рхп*/
   margin-right: 33px;
 }
+
+/* Меню бургер */
+.header__menu {
+  padding: 1px 10px;
+  cursor: pointer;
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: 0.6s;
+    z-index: 1;
+    overflow: auto;
+    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+  /* z-index: 10; */
+  /* display: none; */
+}
+
+.nav__title {
+  margin-bottom: 24px;
+  font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}
+.nav__heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+.nav__heading:nth-child(n+2) {
+  /* Все элементы начиная со второго имееют margin-top: 12px; */
+  margin-top: 12px;
+}
+.nav__item {
+  list-style-type: none; 
+}
+.nav__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+.nav__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.nav {
+  width: 232px;
+  background-color: #fff;
+  height: calc(100vh - 63px);
+  padding: 20px;
+}
+
+.nav__wrap {
+  position: relative;
+}
+
+.nav__close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+#burger {
+  display: none;
+}
+
+#burger:checked~.header__nav {
+  display: block;
+}
+
+#burger:not(checked)~.header__nav {
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .header__wrap {
@@ -521,6 +638,7 @@ body {
   .content__p {
     font-size: 28px;
     line-height: 30px;
+
   }
   .decor {
     font-size: 24px;
@@ -592,10 +710,12 @@ body {
   }
 }
 
-@media (max-width: 375px) {
-  .header {
-    width: 375px;
+@media (max-width: 400px) {
+  * {
+    margin: 0 auto;
+    padding: 0 auto;
   }
+
   .header__right :nth-child(n+2) {
     display: none;
   }
@@ -657,24 +777,9 @@ body {
     line-height: 21px;
     padding-bottom: 22px;
   }
-  .footer__bottom {
-    height: 143px;
-  }
-  .footer__bottom__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .copyright {
-    text-align: center;
-  }
+}
+
+.copyright {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

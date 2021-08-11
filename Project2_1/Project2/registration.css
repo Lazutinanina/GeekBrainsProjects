@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* сбрасываем все дефолтные отступы */
+}
+
+.container {
+  /* добавляем еще 20рх, чтобы добавить внутренние отступы и не было прижатости элементов к краям блока */
+  max-width: 1160px;
+  padding: 0 10px;
+  /* центровка блока */
+  margin: 0 auto;
+  /* Чтобы блок не увеличивал размеры */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #222222;
+  /* отступ элементам снизу сверху 10, справа слева 0 */
+  padding: 19px 0;
+}
+
+.header__wrap {
+  /* устанавливаем расположение иконок */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 41px;
+}
+
+.header__item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header__item:not(:last-child) {
+  /* всем кроме последнего элемента отступ справа 33рхп*/
+  margin-right: 33px;
+}
+
+.breadcrumbs {
+  /* height: 148px; */
+  background: #F8F3F4;
+  padding: 60px 0;
+}
+
+.breadcrumbs__left {
+  /* width: 194px;
+ height: 29px; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.holder {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.holder__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.holder__form {
+  height: 543px;
+  width: 380px;
+}
+
+.holder__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+.holder__promo {
+  height: 334px;
+  width: 639px;
+}
+
+.holder__field {
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+  padding-left: 16px;
+}
+
+.holder__field_radio {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.holder__caption {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding-bottom: 39px;
+}
+
+.holder__btn {
+  width: 167px;
+  height: 50px;
+  background: #F16D7F;
+  border: none;
+  color: white;
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.holder__btn:hover {
+  background-position: 0;
+}
+
+.holder__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.holder__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 21px;
+}
+
+.holder__items {
+  list-style: none;
+}
+
+.holder__items_item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 16px;
+}
+
+.holder__items_item:before {
+  content: '✔';
+  color: #000000;
+  padding-right: 20px;
+}
+
+.footer {
+  background-image: url(img/footertop.png);
+  background-repeat: no-repeat;
+  /* растягиваем картинку на весь экран - делаем резиновую */
+  background-size: 100%;
+  /*  затемнение картинки */
+  background-blend-mode: screen;
+  background-color: rgba(244, 244, 244, 0.7);
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 49px;
+}
+
+.footer__top {
+  width: 1600px;
+  height: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer__left {
+  width: 360px;
+  height: 250px;
+  text-align: center;
+}
+
+.footer__right {
+  width: 557px;
+  height: 142px;
+}
+
+.footer__right__p {
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.footer__right__decor {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 12px;
+}
+
+.footer__left__p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer__left img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 32px;
+}
+
+.footer__input {
+  border-radius: 50px 0 0 50px;
+  border: 0px;
+  background-color: #E1E1E1;
+  padding: 7px 64px 6px 22px;
+}
+
+.footer__button {
+  border-radius: 0 50px 50px 0;
+  background: #F16D7F;
+  color: #FFFFFF;
+  border: 0px;
+  width: 100px;
+}
+
+.footer__bottom {
+  height: 79px;
+  /* width: 1600px; */
+  background: #222224;
+}
+
+.copyright {
+  height: 19px;
+  width: 329px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.copyright p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer__bottom__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon {
+  padding-top: 24px;
+  padding-bottom: 23px;
+}
+
+.icon__link {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px;
+  margin: 7px;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+}
+
+/* При наведении на класс с иконками - смена цвета */
+.icon__link:hover {
+  color: #fff;
+  background-color: #F16D7F;
+}
+
+.fas {
+  color: white;
+  padding-left: 20px;
+  width: 5,67px;
+  height: 9,92px;
+}
+/*# sourceMappingURL=registration.css.map */

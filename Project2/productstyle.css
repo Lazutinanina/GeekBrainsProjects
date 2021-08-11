@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: 'Lato', sans-serif;
+    /* Для прижатия футера к низу */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -366,6 +370,7 @@ body {
   /*  затемнение картинки */
   background-blend-mode: screen;
   background-color: rgba(244, 244, 244, 0.7);
+  margin-top: auto;
 }
 
 .footer__form {

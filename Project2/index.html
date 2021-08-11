@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -21,11 +23,77 @@
                 <img src="img/search.png" alt="">
             </div>
             <div class="header__right">
-                <img class="header__item" src="img/menu.png" alt="">
+                <!-- Меню бургер -->
+                <div class="header__item">
+                    <input type="checkbox" id="burger">
+                    <label class="header__menu" for="burger"> <img src="img/menu.png" alt=""></label>
+                    <nav class="header__nav nav">
+                        <div class="nav__wrap">
+                            <label class="nav__close" for="burger">X</label>
+                            <h2 class="nav__title">MENU</h2>
+                            <h3 class="nav__heading">MAN</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Bags</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Denim</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">T-Shirts</a>
+                                </li>
+                            </ul>
+
+                            <h3 class="nav__heading">WOMAN</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Jackets & Coats
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Polos</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">T-Shirts</a>
+                                </li>
+                            </ul>
+
+                            <h3 class="nav__heading">KIDS</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Jackets & Coats</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Polos</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">T-Shirts</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Shirts</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Bags</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
                 <img class="header__item" src="img/personal.png" alt="">
                 <img class="header__item" src="img/product.png" alt="">
             </div>
         </div>
+
     </div>
 
     <div class="content">
@@ -212,17 +280,26 @@
     </div>
     <div class="footer__bottom">
         <div class="container footer__bottom__wrap">
+
             <div class="copyright">
                 <p>© 2021 Brand All Rights Reserved.</p>
             </div>
+            <!-- Иконки с фонт  -->
             <div class="icon">
-                <img src="img/5.png" alt="">
-                <img src="img/4.png" alt="">
-                <img src="img/6.png" alt="">
-                <img src="img/2.png" alt="">
+                <a href="#" class="icon__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
