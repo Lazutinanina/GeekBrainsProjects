@@ -72,6 +72,9 @@ body {
 .holder {
   margin-top: 64px;
   margin-bottom: 96px;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .holder__wrap {
