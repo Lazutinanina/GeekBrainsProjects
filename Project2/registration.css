@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 body {
   font-family: 'Lato', sans-serif;
-      /* Для прижатия футера к низу */
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
 }
 
 * {
@@ -30,6 +26,7 @@ body {
   background-color: #222222;
   /* отступ элементам снизу сверху 10, справа слева 0 */
   padding: 19px 0;
+  position: relative;
 }
 
 .header__wrap {
@@ -75,6 +72,9 @@ body {
 .holder {
   margin-top: 64px;
   margin-bottom: 96px;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .holder__wrap {
@@ -195,7 +195,6 @@ body {
   /*  затемнение картинки */
   background-blend-mode: screen;
   background-color: rgba(244, 244, 244, 0.7);
-  margin-top: auto;
 }
 
 .footer__form {

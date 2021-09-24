@@ -1,0 +1,387 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* ::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial'),
+       url('fonts/Arial-Regular.woff') format('woff'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial'),
+       url('fonts/Arial-Bold.woff') format('woff'); 
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'),
+       url('fonts/SFProDisplay-Thin.woff') format('woff'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Arial SF Pro Display", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("img/bacground_desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 189px;
+  padding-bottom: 82px;
+  margin-bottom: 57px;
+}
+
+.header__content {
+  max-width: 522px;
+}
+
+.header__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+.header__descr {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E0C1EB;
+  padding-bottom: 44px;
+}
+
+.header__result {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E1AFF2;
+}
+
+.holder {
+  margin-bottom: 96px;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.holder__wrap {
+  text-align: center;
+}
+
+.holder__form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 87px;
+}
+
+.holder__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+}
+
+.holder__promo {
+  height: 334px;
+  width: 639px;
+}
+
+.holder__field {
+  width: 724px;
+  height: 50px;
+  left: calc(50% - 724px/2 - 0.5px);
+  background: #FFFFFF;
+  border: 1px solid #9B58C1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.holder__caption {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #808080;
+margin-top: 26px;
+margin-bottom: 41px;
+}
+
+.holder__btn {
+  width: 300px;
+  height: 65px;
+  background: #F81155;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn_text {
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+}
+.label {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px 0 15px 36px;
+}
+
+.footer {
+  max-width: 730px;
+  background: #A32CE8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 182px;
+}
+.footer__subtitle {
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 22px;
+color: #F9EDFD;
+padding-bottom: 10px;
+}
+.footer__title {
+  font-style: normal;
+font-size: 18px;
+line-height: 22px;
+color: #F9EDFD;
+padding-bottom: 15px;
+}
+.law {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #F9EDFD;
+}
+.footer__content {
+  padding: 15px 38px 35px 46px;
+}
+
+img {
+  display: inline-block;
+  margin-top: -50px;
+  margin-left: 330px;
+  max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url("img/bacground_tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 149px;
+    padding-bottom: 29px;
+  }
+  .header__subtitle {
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 80px;
+color: #FFFFFF;
+  }
+  .header__title {
+max-width: 373px;
+font-size: 50px;
+line-height: 50px;
+letter-spacing: -0.05em;
+  }
+.header__descr {
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 16px;
+letter-spacing: -0.02em;
+max-width: 337px;
+  } 
+ .header__result {
+font-size: 12px;
+line-height: 25px;
+  } 
+ .holder__field {
+    width: 640px;
+  }
+  .holder__caption {
+    margin-top: 8px;
+    font-size: 12px;
+line-height: 15px;
+  }
+  .holder__btn {
+    width: 260px;
+    height: 56px;
+  }
+  .holder__form {
+    margin-bottom: 90px;
+  }
+  .holder__text {
+    max-width: 534px;
+    max-height: 61px;
+  }
+  .label {
+    padding: 15px 0 14px 34px;
+  }
+  .footer {
+    max-width: 638px;
+    margin-bottom: 106px;
+  }
+ .footer__content {
+    padding: 12px 40px 26px 38px;
+}
+img {
+  margin-top: -40px;
+  margin-left: 280px;
+}
+} 
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 54px;
+    padding-right: 33px;
+  }
+  .header {
+    background-image: url("img/bacground_mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 528.98px;
+    padding-top: 0px;
+  }
+  .header__subtitle {
+    margin: 0;
+    font-size: 18px;
+    line-height: 80px;
+  }
+  .header__title {
+margin: 0;
+max-width: 334px;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: -0.05em;
+padding-bottom: 8px;
+}
+ .header__descr {
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.02em;
+max-width: 329px;
+padding-bottom: 244px;
+  } 
+ .header__result {
+font-size: 12px;
+line-height: 25px;
+padding-bottom: 17px;
+  }
+.header__content {
+    padding-top: 23px;
+  }
+  .holder__field {
+    width: 345px;
+  }
+  .holder__caption {
+    margin-top: 8px;
+    font-size: 12px;
+  line-height: 14px;
+  }
+  .holder__text {
+    max-width: 345px;
+    max-height: 61px;
+    margin-bottom: 35px;
+  }
+  .holder__form {
+    margin-bottom: 133px;
+  }
+  .label {
+    padding: 15px 0 14px 19px;
+  }
+  .footer {
+    max-width: 345px;
+    margin-bottom: 111px;
+  }
+  .footer__content {
+    padding: 26px 18px 33px 24px;
+}
+.footer__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  color: #F9EDFD;
+  padding-bottom: 10px;
+  }
+  .footer__title {
+    font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #F9EDFD;
+  padding-bottom: 15px;
+  }
+  .law {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #F9EDFD;
+  }
+img {
+  margin-top: -40px;
+  margin-left: 130px;
+}
+}
