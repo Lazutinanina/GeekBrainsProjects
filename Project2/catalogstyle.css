@@ -80,10 +80,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 64px;
-} 
+}
 
 /* обертка для текста и картинки */
- .slogan__left__wrap {
+.slogan__left__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,19 +100,16 @@ body {
   text-align: left;
   margin-right: 11px;
   color: #000000;
-} 
-.slogan__filter_left {
-  position: relative;
 }
+
 .filter {
   width: 360px;
   background-color: #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          position: absolute;
+  position: relative;
   outline: none;
   border: none;
-  cursor: pointer;
 }
 
 .filter-item {
@@ -121,12 +118,6 @@ body {
 
 .filter-list {
   text-decoration: none;
-  padding: 16px 0 0 16px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
 }
 
 .filter ::-webkit-details-marker {
@@ -149,7 +140,6 @@ body {
   color: #EF5B70;
   outline: none;
   border: none;
-  fill: #EF5B70;
   list-style: none;
 }
 
@@ -160,6 +150,10 @@ body {
   left: 0;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-list {
+  color: #6F6E6E;
 }
 
 .filter-size {
@@ -184,7 +178,7 @@ summary {
 .filter-title[open] > summary {
   color: #EF5B70;
   outline: none;
-  border-bottom: 1px solid #EBEBEB;
+  border: none;
 }
 
 .filter-size[open] > summary {
@@ -194,25 +188,6 @@ summary {
   list-style: none;
 }
 
-.filter-content_category {
-  border-left: 5px solid #EF5B70;
-  border-bottom: 1px solid #EBEBEB;
-  color: #6F6E6E;
-  cursor: pointer;
-  outline: none;
-  min-height: 37px;
-  padding: 0 0 0 11px;
-  /* Для выравнивания summary элементов по центру */
-  display: flex;
-    align-items: center;
-    font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-}
-.filter-content_caterogy ul li {
-  padding-bottom: 11px;
-}
 .size-item {
   color: #6F6E6E;
   list-style: none;
@@ -558,87 +533,6 @@ line-height: 17px;
   /* всем кроме последнего элемента отступ справа 33рхп*/
   margin-right: 33px;
 }
-/* Меню бургер */
-.header__menu {
-  padding: 1px 10px;
-  cursor: pointer;
-}
-
-.header__nav {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  transition: 0.6s;
-    z-index: 1;
-    overflow: auto;
-    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
-  /* z-index: 10; */
-  /* display: none; */
-}
-
-.nav__title {
-  margin-bottom: 24px;
-  font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-color: #000000;
-}
-.nav__heading {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #F16D7F;
-  margin-bottom: 12px;
-}
-.nav__heading:nth-child(n+2) {
-  /* Все элементы начиная со второго имееют margin-top: 12px; */
-  margin-top: 12px;
-}
-.nav__item {
-  list-style-type: none; 
-}
-.nav__link {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
-}
-.nav__item:not(:last-child) {
-  margin-bottom: 12px;
-}
-.nav {
-  width: 232px;
-  background-color: #fff;
-  height: calc(100vh - 63px);
-  padding: 20px;
-}
-
-.nav__wrap {
-  position: relative;
-}
-
-.nav__close {
-  position: absolute;
-  right: -10px;
-  top: -10px;
-}
-
-#burger {
-  display: none;
-}
-
-#burger:checked~.header__nav {
-  display: block;
-}
-
-#burger:not(checked)~.header__nav {
-  display: none;
-}
-
 
 @media (max-width: 768px) {
   .header__wrap {
@@ -835,14 +729,6 @@ color: #000000;
   }
   .slogan_filter {
     display: none;
-    font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #EF5B70;
-  }
-  .slogan__filter_left {
-    position: relative;
   }
   summary svg {
     height: 25px;
@@ -854,7 +740,9 @@ color: #EF5B70;
     font-size: 12px;
     line-height: 14px;
   }
-
+  .filter {
+    width: 9%;
+  }
   .filter-size {
     font-style: normal;
     font-weight: normal;
